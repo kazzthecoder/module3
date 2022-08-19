@@ -1,0 +1,34 @@
+html {
+    text-align: center;
+}
+
+body{
+    background-color:rgb(224, 98, 60);
+    margin: auto;
+   
+}
+header{
+    text-align: center;
+    margin: auto;
+}
+img {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
+h2{
+    text-decoration: underline;
+    color:navy;
+}
+blockquote{
+    font-style: italic;
+
+}
+main {
+    margin: auto;
+
+}
+.table-format {
+    margin-left: auto;
+    margin-right: auto;
+  }

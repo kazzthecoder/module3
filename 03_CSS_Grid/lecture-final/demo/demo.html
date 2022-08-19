@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <v-card class="mx-auto" width="40%">
+            <v-img class="white--text align-end" height="250px" :src="landmark.imageUrlList[0]">
+            </v-img>
+
+            <v-card-title>{{ landmark.landmarkName }}</v-card-title>
+            <v-card-subtitle class="pb-0">{{ landmark.category }} </v-card-subtitle>
+            <v-card-text class="text--primary">
+                <div>{{ landmark.description }}</div>
+            </v-card-text>
+            <v-card-subtitle class="pb-0" <ul id="schedule" v-for: schedule in landmark.scheduleList>
+                Schedules
+                </ul>
+                <li :key="schedule.id">{{ schedule }}</li>
+            </v-card-subtitle>
+
+            <v-card-actions>
+                <v-btn color="blue">
+                    {{ landmark.upRatings }}
+                    <i class="fa-regular fa-thumbs-up"></i>
+                </v-btn>
+
+                <v-btn color="red">
+                    {{ landmark.downRatings }}
+                    <i class="fa-regular fa-thumbs-down"></i>
+                </v-btn>
+            </v-card-actions>
+        </v-card>
+    </div>
+</body>
+
+</html>
